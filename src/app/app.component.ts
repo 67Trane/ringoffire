@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { StartScreenComponent } from "./start-screen/start-screen.component";
-import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { MatDialogModule} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-root',
