@@ -48,6 +48,19 @@
   }
 }
 
+.scroll-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  app-player-mobile {
+    margin-left: 8px;
+  }
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .btn-add {
   position: absolute;
   right: 32px;
@@ -55,9 +68,13 @@
 }
 
 .pin-bottom {
-    position: absolute;
-    bottom: 32px;
-    left: 100px;
-    right: 100px;
-    
+  position: absolute;
+  bottom: 32px;
+  left: 100px;
+  right: 100px;
+  @media (max-width: 720px) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
