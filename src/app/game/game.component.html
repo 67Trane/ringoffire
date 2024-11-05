@@ -9,6 +9,8 @@
 </div>
 
 <div *ngIf="gameOver" class="gameOver"><img src="assets/img/game_over.svg" alt=""></div>
+
+<!-- TO PRELOAD NEXT IMAGE CARD -->
 <img class="preloadImage" src="" alt="assets/img/allcards/{{ game.stack[game.stack.length - 1] }}.png">
 
 <div *ngIf="!gameOver" class="field" [ngStyle]="{'background-image': 'url(assets/img/board.jpg)'}">
